@@ -11,8 +11,10 @@ The ESC key quits.
 
 Compile with:
 
-> gcc polykeyboard.c -o polykeyboard -ffast-math -fomit-frame-pointer -msseregparm -mfpmath=sse -msse2 `sdl-config --cflags --libs`
+gcc polykeyboard.c -o polykeyboard -ffast-math -fomit-frame-pointer -msseregparm -mfpmath=sse -msse2 `sdl-config --cflags --libs`
 
 The program requires an installation of SDL, so install that first.
 
 The code was tested using x86 with sse2 extensions on an old 2Ghz Core 2 duo. Without the sse2 the synth just doesnt fill the buffer fast enough and the playback thread will skip.
+
+The samples included here may need to be downloaded before they will play. And many apologies for the poor recording...
